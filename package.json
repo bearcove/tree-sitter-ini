@@ -2,7 +2,7 @@
   "name": "tree-sitter-ini",
   "version": "1.0.0",
   "description": "INI grammar for tree-sitter",
-  "main": "index.js",
+  "main": "bindings/node",
   "scripts": {
     "test": "tree-sitter test"
   },
@@ -18,5 +18,14 @@
   },
   "devDependencies": {
     "tree-sitter-cli": "^0.16.9"
-  }
+  },
+  "tree-sitter": [
+    {
+      "scope": "source.ini",
+      "file-types": [
+        "ini",
+        "wrap"
+      ]
+    }
+  ]
 }
